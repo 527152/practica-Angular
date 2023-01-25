@@ -1,0 +1,31 @@
+
+
+<hr>
+<h1>DBZ</h1>    
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes [personajes]="personajes"></app-personajes>
+        <!-- <h3>Personajes</h3>
+        <ul>
+            <li *ngFor="let personaje of personajes">
+                {{personaje.nombre}} - {{personaje.ciudad}}
+            </li>
+            
+        </ul> -->
+    </div>
+    <div class="col">
+        <h3>Agregar <small>{{ nuevo.nombre }}</small></h3>
+
+        <form action="" (ngSubmit)="agregar()">
+
+            <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+            <input type="text" placeholder="Ciudad" name="ciudad" [(ngModel)]="nuevo.ciudad">
+
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+
+</div>
+<hr>
